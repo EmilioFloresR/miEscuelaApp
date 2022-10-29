@@ -22,7 +22,8 @@ class AlumnoSeeder extends Seeder
             'fecha_nacimiento' => '2004/10/22',
             'domicilio' => 'Calle Tierra',
             'telefono' => '6672345685'
-        ],[
+        ]);
+        Alumno::create([
             'n_control' => '123456789012',
             'nombre' => 'Pepe',
             'edad' => 17,
@@ -30,7 +31,8 @@ class AlumnoSeeder extends Seeder
             'fecha_nacimiento' => '2004/10/22',
             'domicilio' => 'Calle Tierra',
             'telefono' => '6672345685'
-        ],[
+        ]);
+        Alumno::create([
             'n_control' => '123456789012',
             'nombre' => 'Pepe',
             'edad' => 17,
@@ -38,7 +40,8 @@ class AlumnoSeeder extends Seeder
             'fecha_nacimiento' => '2004/10/22',
             'domicilio' => 'Calle Tierra',
             'telefono' => '6672345685'
-        ],[
+        ]);
+        Alumno::create([
             'n_control' => '123456789012',
             'nombre' => 'Pepe',
             'edad' => 17,
@@ -46,12 +49,16 @@ class AlumnoSeeder extends Seeder
             'fecha_nacimiento' => '2004/10/22',
             'domicilio' => 'Calle Tierra',
             'telefono' => '6672345685'
-        ],['n_control' => '123456789012',
-        'nombre' => 'Juan',
-        'edad' => 17,
-        'sexo' => 1,
-        'fecha_nacimiento' => '2004/10/22',
-        'domicilio' => 'Calle Tierra',
-        'telefono' => '6672345685']);
+        ]);
+        Alumno::create([
+            'n_control' => '123456789012',
+            'nombre' => 'Juan',
+            'edad' => 17,
+            'sexo' => 1,
+            'fecha_nacimiento' => '2004/10/22',
+            'domicilio' => 'Calle Tierra',
+            'telefono' => '6672345685'
+        ]);
+
     }
 }
