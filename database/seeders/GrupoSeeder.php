@@ -15,34 +15,32 @@ class GrupoSeeder extends Seeder
      */
     public function run(){
         Grupo::create([
+            'especialidad_id' => 1,
             'clave' => '5AMP',
             'turno' => 0,
-            'descripcion' => 'Programacion matutino'
+            'semestre' => 5,
+            'descripcion' => 'Programación matutino'
         ]);
         Grupo::create([
+            'especialidad_id' => 2,
             'clave' => '5AMCO',
             'turno' => 0,
+            'semestre' => 5,
             'descripcion' => 'Contabilidad matutino'
-        ]);   
+        ]);
         Grupo::create([
+            'especialidad_id' => 4,
+            'clave' => '5AVO',
+            'turno' => 1,
+            'semestre' => 5,
+            'descripcion' => 'Ofimática matutino'
+        ]);
+        Grupo::create([
+            'especialidad_id' => 1,
             'clave' => '5AVP',
             'turno' => 1,
-            'descripcion' => 'Programacion vespertino'
-        ]);   
-        Grupo::create([
-            'clave' => '5AMC',
-            'turno' => 0,
-            'descripcion' => 'Construccion Matutino'
-        ]);   
-        Grupo::create([
-            'clave' => '5AMO',
-            'turno' => 0,
-            'descripcion' => 'Ofimatica Matutino'
-        ]);      
-        Grupo::create([
-            'clave' => '5AVCO',
-            'turno' => 1,
-            'descripcion' => 'Contabilidad Vespertino'
-        ]);   
+            'semestre' => 5,
+            'descripcion' => 'Programación vespertino'
+        ]);
     }
 }

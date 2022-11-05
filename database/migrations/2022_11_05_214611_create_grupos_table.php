@@ -15,11 +15,15 @@ return new class extends Migration
     {
         Schema::create('grupos', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('especialidad_id');
             $table->String('clave', 10);
             $table->boolean('turno');
+            $table->integer('semestre');
             $table->String('descripcion');
             $table->timestamps();
             $table->softDeletes();
+
+            $table->foreign('especialidad_id')->references('id')->on('especialidades');
         });
     }
 
