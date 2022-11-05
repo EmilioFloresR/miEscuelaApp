@@ -2,6 +2,7 @@
 
 @section('contenido')
     <h1>Listado de alumnos</h1><hr>
+    <a href="{{ url('/alumno/registrar') }}" class="btn btn-secondary">Registrar Alumno</a><br><br>
     <table class="table table-hover">
         <thead>
             <th>ID</th>
@@ -25,8 +26,8 @@
                 <td>{{$a->domicilio}}</td>
                 <td>{{$a->telefono}}</td>
                 <td>
-                <a href="">editar</a>   
-                <a href="">eliminar</a>
+                <a href="{{url('/alumno/editar')}}/{{$a->id}}" class="btn btn-primary btn-sm">editar</a>   
+                <a href="{{url('/alumno/eliminar')}}/{{$a->id}}" class="btn btn-danger btn-sm">eliminar</a>
                 </td>
             </tr>               
             @endforeach
