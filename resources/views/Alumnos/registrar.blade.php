@@ -2,7 +2,7 @@
 
 @section('contenido')
     <h1>Registrar Alumno</h1><hr>
-    <form action="{{ url('/alumno/') }}" method="POST">
+    <form action="{{ url('/alumno/guardar') }}" method="post">
         @csrf
         <div class="form-group">
             <label for="">No. Control:</label>

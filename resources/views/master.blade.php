@@ -34,6 +34,28 @@
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
             </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Grupos
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="grupos">Consultar</a>
+                <a class="dropdown-item" href="{{url('/grupo/registrar')}}">Registrar</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Especialidad
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="especialidades">Consultar</a>
+                <a class="dropdown-item" href="{{url('/especialidad/registrar')}}">Registrar</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
             <li class="nav-item">
               <a class="nav-link disabled">Disabled</a>
             </li>
